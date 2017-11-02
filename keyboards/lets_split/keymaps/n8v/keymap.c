@@ -2,9 +2,6 @@
 #include "action_layer.h"
 #include "eeconfig.h"
 
-//Following line allows macro to read current RGB settings
-extern rgblight_config_t rgblight_config;
-
 extern keymap_config_t keymap_config;
 
 #define _QWERTY 0
