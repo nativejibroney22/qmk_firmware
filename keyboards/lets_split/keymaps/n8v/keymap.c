@@ -78,7 +78,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_NAV] = KEYMAP( \
 	_______, KC_PAST,  KC_7,    KC_8,  KC_9,    KC_PMNS,        _______,  _______,  _______, _______,   _______,  _______, \
-	_______, KC_PSLS,  KC_4,    KC_5,  KC_F6,   KC_PPLS,        KC_LEFT,  KC_DOWN,  KC_UP,   KC_RIGHT,  _______,  _______, \
+	_______, KC_PSLS,  KC_4,    KC_5,  KC_6,   KC_PPLS,        KC_LEFT,  KC_DOWN,  KC_UP,   KC_RIGHT,  _______,  _______, \
 	_______, _______,  KC_1,    KC_2,  KC_3,    _______,        _______,  _______,  _______, _______,   _______,  _______, \
 	_______, _______,  M(0),    KC_0,  KC_DOT,  KC_ENT,         _______,  _______,  _______, _______,   _______,  _______ \
 ),
@@ -135,14 +135,14 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) //
 		case 2:
 			return MACRO( D(LSFT), T(9), U(LSFT), D(LSFT), T(0), U(LSFT), T(LEFT), END );
 			break;
-		case 3:
+		case 4:
 			return MACRO( D(LSFT), T(LBRC), U(LSFT), D(LSFT), T(RBRC), U(LSFT), T(LEFT), END );
 			break;
-		case 4:
+		case 3:
 			return MACRO( T(LBRC), T(RBRC), T(LEFT), END);
 			break;
 		case 5:
-			return MACRO_NONE;
+			return MACRO( T(B,U,R,C,H,E,T,T,A), T(TAB), END );
 			break;
 		case 6:
 			return MACRO_NONE;
