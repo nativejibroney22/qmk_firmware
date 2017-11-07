@@ -1,5 +1,5 @@
-RGBLIGHT_ENABLE  = no
-NKRO_ENABLE      = no
+RGBLIGHT_ENABLE  = yes
+NKRO_ENABLE      = yes
 
 ifndef	QUANTUM_DIR
 	include	../../../../Makefile
