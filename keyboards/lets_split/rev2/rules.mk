@@ -1,6 +1,2 @@
-RGBLIGHT_ENABLE  = no
-NKRO_ENABLE      = no
-
-ifndef	QUANTUM_DIR
-	include	../../../../Makefile
-endif
+NKRO_ENABLE	=	yes
+AUDIO_ENABLE	=	yes
