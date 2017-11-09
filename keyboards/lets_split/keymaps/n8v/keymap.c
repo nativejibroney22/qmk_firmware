@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_FN1] =  KEYMAP( \
 	KC_GRV,  KC_1,    KC_2,    KC_3,     KC_4,    KC_5,           KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_END, \
-	_______, KC_EXLM, KC_AT,   KC_HASH,  KC_DLR,  KC_PERC,        KC_CIRC,  KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RPRN,  _______ \
+	_______, KC_EXLM, KC_AT,   KC_HASH,  KC_DLR,  KC_PERC,        KC_CIRC,  KC_AMPR,  KC_ASTR,  KC_LPRN,  KC_RPRN,  _______, \
 	KC_F12,  KC_F1,   KC_F2,   KC_F3,    KC_F4,   KC_F5,          KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11, \
 	_______, _______, _______, _______,  _______, _______,        _______,  _______,  _______,  _______,  _______,  _______ \
 ),
@@ -186,19 +186,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 			}
 			return false;
 			break;
-		case NAV:
+		case FN2:
 			if (record->event.pressed) {
-				layer_on(_NAV);
+				layer_on(_FN2);
 			} else {
-				layer_off(_NAV);
+				layer_off(_FN2);
 			}
 			return false;
 			break;
-		case SYMBOL:
+		case SYM:
 			if (record->event.pressed) {
-				layer_on(_SYMBOL);
+				layer_on(_SYM);
 			} else {
-				layer_off(_SYMBOL);
+				layer_off(_SYM);
 			}
 			return false;
 			break;
